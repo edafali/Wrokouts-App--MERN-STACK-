@@ -7,7 +7,7 @@ export default function Home() {
   const {workouts,dispatch} = useWorkoutContext()
   useEffect(() => {
     const fetchWorkouts = () => {
-      const res = fetch("http://localhost:4000/api/workouts/")
+      const res = fetch("https://wrokouts-app-backend.onrender.com/api/workouts/")
         .then((res) => {
           return res.json();
         })
